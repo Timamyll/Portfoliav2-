@@ -2,6 +2,14 @@
 @import url(./modules/mans.css);
 @import url(./modules/gamburger.css);
 @import url(./modules/tabSlide.css);
+@import url(./modules/coding.css);
+@import url(./modules/contact.css);
+@import url(./modules/footer.css);
+@import url(./modules/music.css);
+
+
+
+
 
 
 
@@ -50,4 +58,10 @@ body {
     margin: 0 auto;
     box-sizing: border-box;
     position: relative;
+}
+
+
+.clasec {
+    margin-top: 540px;
+    color: black;
 }

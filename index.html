@@ -15,6 +15,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/jquery.fancybox.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -60,26 +64,178 @@
       <div class="tab__title">
         <h2 class="tab__titles">About me</h2>
       </div>
-      <div class="slide__tab">
-        <div class="slide" style="background-image: url(./images/tab/01.png);">
-          <h3 class="slide__title">I love music</h3>
-        </div>
-        <div class="slide" style="background-image: url(./images/tab/02.png);">
+      <div class="nav  slide__tab" id="myTab" role="tablist">
+        <a class="nav-item slide" style="background-image: url(./images/tab/01.png);" role="tab"
+          aria-controls="home-tab-pane" href="#myTabContent" aria-selected="true" id="home-tab" data-bs-toggle="tab"
+          data-bs-target="#home-tab-pane">
           <h3 class="slide__title">I love coding</h3>
-        </div>
-        <div class="slide" style="background-image: url(./images/tab/03.png);">
+        </a>
+        <a class="nav-item slide" style="background-image: url(./images/tab/02.png);" id="profile-tab"
+          data-bs-toggle="tab" data-bs-target="#profile-tab-pane" role="tab" aria-controls="profile-tab-pane"
+          aria-selected="false">
+          <h3 class="slide__title">I love music</h3>
+        </a>
+        <a class="nav-item slide" style="background-image: url(./images/tab/03.png);" id="contact-tab"
+          data-bs-toggle="tab" data-bs-target="#contact-tab-pane" role="tab" aria-controls="contact-tab-pane"
+          aria-selected="false">
           <h3 class="slide__title">I like to study</h3>
-        </div>
-        <div class="slide active" style="background-image: url(./images/tab/04.png);">
-          <h3 class="slide__title">My Projects</h3>
-        </div>
+          </li>
+          <a class="nav-item slide" style="background-image: url(./images/tab/04.png);" id="disabled-tab"
+            data-bs-toggle="tab" data-bs-target="#disabled-tab-pane" role="tab" aria-controls="disabled-tab-pane"
+            aria-selected="false">
+            <h3 class="slide__title">My Projects</h3>
+          </a>
       </div>
-      <div class="my_love">
+      <div class="tab-content animate__animated animate__fadeInUp" id="myTabContent">
+        <div class="tab-pane fade show" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+          <div class="coding__page">
+            <h2 class="coding__title">I love coding</h2>
+            <div class="coding__box">
+              <div class="coding__images">
+                <img src="./images/coding/01.png" alt="" class="coding__img">
+              </div>
+              <div class="coding__text">
+                <p class="coding__texts">Hi, my name is Timofey. I am a frontend developer and also do web design. I
+                  created the layout of this site myself and
+                  made it myself</p>
+              </div>
+            </div>
+            <div class="coding__box boxs">
+              <div class="coding__text">
+                <p class="coding__texts">I have been in this field since April 2022. I really like IT. And the first
+                  reason is a separate world that has so many
+                  colors and facets that they cannot be counted. The illusionist of this world is beautiful, he has no
+                  restrictions by any
+                  criteria, he is free, and in our time this is a rarity</p>
+              </div>
+              <div class="coding__images">
+                <img src="./images/coding/02.png" alt="" class="coding__img">
+              </div>
 
+            </div>
+            <div class="coding__box">
+              <div class="coding__images">
+                <img src="./images/coding/04.png" alt="" class="coding__img">
+              </div>
+              <div class="coding__text">
+                <p class="coding__texts">It may seem to you that I talk a lot, but dive into my website and you will
+                  recognize me and see how wonderful it is</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+          <div class="player">
+            <div class="wrapper">
+              <div class="details">
+                <div class="now-playing">PLAYING x OF y</div>
+                <div class="track-art"></div>
+                <div class="track-name">Track Name</div>
+                <div class="track-artist">Track Artist</div>
+              </div>
+
+              <div class="slider_container">
+                <div class="current-time">00:00</div>
+                <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+                <div class="total-duration">00:00</div>
+              </div>
+
+              <div class="slider_container">
+                <i class="fa fa-volume-down"></i>
+                <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">
+                <i class="fa fa-volume-up"></i>
+              </div>
+
+              <div class="buttons">
+                <div class="random-track" onclick="randomTrack()">
+                  <i class="fas fa-random fa-2x" title="random"></i>
+                </div>
+                <div class="prev-track" onclick="prevTrack()">
+                  <i class="fa fa-step-backward fa-2x"></i>
+                </div>
+                <div class="playpause-track" onclick="playpauseTrack()">
+                  <i class="fa fa-play-circle fa-5x"></i>
+                </div>
+                <div class="next-track" onclick="nextTrack()">
+                  <i class="fa fa-step-forward fa-2x"></i>
+                </div>
+                <div class="repeat-track" onclick="repeatTrack()">
+                  <i class="fa fa-repeat fa-2x" title="repeat"></i>
+                </div>
+              </div>
+
+              <div id="wave">
+                <span class="stroke"></span>
+                <span class="stroke"></span>
+                <span class="stroke"></span>
+                <span class="stroke"></span>
+                <span class="stroke"></span>
+                <span class="stroke"></span>
+                <span class="stroke"></span>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">...
+        </div>
+        <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">
+          ...
+        </div>
       </div>
+    </div>
+    </div>
     </div>
 
   </section>
+
+  <section class="page__contact">
+    <div class="container">
+      <div class="contact__title">
+        <h2 class="contact__titles">Contact with me</h2>
+      </div>
+      <div class="contact__box">
+        <div class="contact__body">
+          <a href="" class="contact__telegramm">telegram</a>
+          <a href="" class="contact__instagramm">instagramm
+          </a>
+          <a href="" class="contact__github">Github
+          </a>
+        </div>
+        <div class="contact__bodys">
+
+          <a href="" class="contact__linkedin">linkedin</a>
+          <a href="" class="contact__codewars">codewars
+          </a>
+          <a href="mailto:mylcevtima434@gmail.com" class="contact__gmail">gmail
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer_page">
+    <div class="container">
+      <div class="header__menu footer">
+        <div class="menu__body animate__animated animate__slideInLeft">
+          <div class="menu__logo">
+            <img src="./images/header/logo.svg" alt="logo" class="menu__logos">
+          </div>
+          <nav class="menu_nav">
+            <ul class="nav__item">
+              <li class="nav__link"><a href="" class="nav__items">About</a></li>
+              <li class="nav__link"><a href="" class="nav__items">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="menu__buttom">
+            <a href="" class="menu__buttoms">Let's talk</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </footer>
 
 
 
@@ -105,6 +261,10 @@
   <script src="js/slick.min.js"></script>
   <script src="js/jquery.fancybox.min.js"></script>
   <script src="./js/app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <script src="./js/scripts.js"></script>
   <script src="js/main.js"></script>
 </body>
 

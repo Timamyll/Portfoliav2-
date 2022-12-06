@@ -1,0 +1,41 @@
+.coding__page {}
+
+.coding__title {
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 65px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding-bottom: 138px;
+    padding: 79px;
+}
+
+.coding__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.coding__images {}
+
+.coding__img {
+    border: 5px solid #5A3CCC;
+    border-radius: 67px;
+}
+
+.coding__text {}
+
+.coding__texts {
+    font-family: 'Oregano';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 45px;
+    color: #FFFFFF;
+    max-width: 409px;
+}
+
+.boxs {
+    order: 1;
+}
