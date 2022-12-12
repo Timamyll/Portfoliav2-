@@ -257,6 +257,8 @@
     <div class="menu-click-area" onclick="document.querySelector('.phone').classList.toggle('active')"></div>
   </div>
 
+
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/jquery.fancybox.min.js"></script>
@@ -265,6 +267,24 @@
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
     crossorigin="anonymous"></script>
   <script src="./js/scripts.js"></script>
+<link rel="stylesheet" href="https://wowjs.uk/css/libs/animate.css" />
+<script src="https://www.delac.io/WOW/dist/wow.min.js"></script>
+<script>
+  new WOW().init();
+</script>
+<script>
+  Array.from(document.querySelectorAll('.block-link')).map((animation) => {
+    animation.classList.add('wow');
+    animation.classList.add('fadeInLeft');
+  });
+</script>
+<script>
+  Array.from(document.querySelectorAll('.block-rext')).map((animation) => {
+    animation.classList.add('wow');
+    animation.classList.add('fadeInLeft');
+  });
+</script>
+
   <script src="js/main.js"></script>
 </body>
 

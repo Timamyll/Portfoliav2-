@@ -51,17 +51,3 @@ body {
     scroll-behavior: smooth;
     font-family: 'Orbitron', Courier, monospace;
 }
-
-.container {
-    max-width: 1290px;
-    padding: 0 15px;
-    margin: 0 auto;
-    box-sizing: border-box;
-    position: relative;
-}
-
-
-.clasec {
-    margin-top: 540px;
-    color: black;
-}
