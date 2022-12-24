@@ -4,6 +4,7 @@ for (const slide of slides) {
   slide.addEventListener("click", () => {
     clearActiveClasses();
     slide.classList.add("active");
+    window.scrollBy(0, 600);
   });
 }
 

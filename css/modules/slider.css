@@ -1,0 +1,35 @@
+.study__body {}
+
+.study__slider {
+    width: 689px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.study__images {}
+
+.study__img {}
+
+.slick-next {}
+
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-size: 0px;
+    color: #000;
+    padding-top: 20px;
+}
+
+.slick-dots li>button {
+    width: 10px;
+    height: 10px;
+    border: 1px solid #83A9FF;
+    background: #000;
+    border-radius: 20px;
+}
+
+
+.slick-dots li.slick-active>button {
+    background: #83A9FF;
+}
