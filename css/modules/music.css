@@ -183,10 +183,10 @@ p {
     width: 10px;
     border-radius: 50px;
     margin: 0 5px;
-    animation: animate 1.4s linear infinite;
+    animation: animatess 1.4s linear infinite;
 }
 
-@keyframes animate {
+@keyframes animatess {
     50% {
         height: 20%;
         background: #4286f4;
