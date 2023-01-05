@@ -1,0 +1,238 @@
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrap {
+    margin: 2rem;
+    transform-style: preserve-3d;
+    transform: perspective(100rem);
+    cursor: pointer;
+}
+
+.containers {
+    --rX: 0;
+    --rY: 0;
+    --bX: 50%;
+    --bY: 80%;
+    width: 30rem;
+    height: 36rem;
+    border: 1px solid hsl(180, 20%, 90%);
+    border-radius: 1.6rem;
+    padding: 4rem;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    transform: rotateX(calc(var(--rX) * 1deg)) rotateY(calc(var(--rY) * 1deg));
+    /* background: linear-gradient(hsla(0, 0%, 100%, 0.1), hsla(0, 0%, 100%, 0.1)), url("../../images/LAzerVPN.gif"); */
+    /* background-position: var(--bX) var(--bY); */
+    /* background-size: 40rem auto; */
+    box-shadow: 0 0 3rem .5rem hsla(0, 0%, 0%, 0.2);
+    transition: transform 0.6s 1s;
+}
+
+.container-1 {
+    background: linear-gradient(hsla(0, 0%, 100%, 0.1), hsla(0, 0%, 100%, 0.1)), url("../../images/LAzerVPN.gif");
+    background-position: center;
+    /* background-size: cover; */
+}
+
+.container-2 {
+    background: linear-gradient(hsla(0, 0%, 100%, 0.1), hsla(0, 0%, 100%, 0.1)), url("../../images/paralax.gif");
+    background-position: center;
+    /* background-size: cover; */
+
+}
+
+.container-3 {
+    background: linear-gradient(hsla(0, 0%, 100%, 0.1), hsla(0, 0%, 100%, 0.1)), url("../../images/Housevop.gif");
+    background-position: center;
+    /* background-size: cover; */
+}
+
+.container-4 {
+    background: linear-gradient(hsla(0, 0%, 100%, 0.1), hsla(0, 0%, 100%, 0.1)), url("../../images/Aperture.gif");
+    background-position: center;
+    /* background-size: cover; */
+}
+
+.container-5 {
+    background: linear-gradient(hsla(0, 0%, 100%, 0.1), hsla(0, 0%, 100%, 0.1)), url("../../images/anow.gif");
+    background-position: center;
+    /* background-size: cover; */
+}
+
+.container-6 {
+    background: linear-gradient(hsla(0, 0%, 100%, 0.1), hsla(0, 0%, 100%, 0.1)), url("../../images/Richachd.gif");
+    background-position: center;
+    /* background-size: cover; */
+}
+
+.container-7 {
+    background: linear-gradient(hsla(0, 0%, 100%, 0.1), hsla(0, 0%, 100%, 0.1)), url("../../images/himo-xiaomi.gif");
+    background-position: center;
+    /* background-size: cover; */
+}
+
+.container-8 {
+    background: linear-gradient(hsla(0, 0%, 100%, 0.1), hsla(0, 0%, 100%, 0.1)), url("../../images/outdoor.gif");
+    background-position: center;
+    /* background-size: cover; */
+}
+
+.container-9 {
+    background: linear-gradient(hsla(0, 0%, 100%, 0.1), hsla(0, 0%, 100%, 0.1)), url("../../images/safari.gif");
+    background-position: center;
+    /* background-size: cover; */
+}
+
+.container-10 {
+    background: linear-gradient(hsla(0, 0%, 100%, 0.1), hsla(0, 0%, 100%, 0.1)), url("../../images/cafe-start.gif");
+    background-position: center;
+    /* background-size: cover; */
+}
+
+.container-11 {
+    background: linear-gradient(hsla(0, 0%, 100%, 0.1), hsla(0, 0%, 100%, 0.1)), url("../../images/spacex.gif");
+    background-position: center;
+    /* background-size: cover; */
+}
+
+.container-12 {
+    background: linear-gradient(hsla(0, 0%, 100%, 0.1), hsla(0, 0%, 100%, 0.1)), url("../../images/js-game.gif");
+    background-position: center;
+    /* background-size: cover; */
+}
+
+.container-13 {
+    background: linear-gradient(hsla(0, 0%, 100%, 0.1), hsla(0, 0%, 100%, 0.1)), url("../../images/relvise.gif");
+    background-position: center;
+    /* background-size: cover; */
+}
+
+.container-14 {
+    background: linear-gradient(hsla(0, 0%, 100%, 0.1), hsla(0, 0%, 100%, 0.1)), url("../../images/car-cart.gif");
+    background-position: center;
+    /* background-size: cover; */
+}
+
+.container-15 {
+    background: linear-gradient(hsla(0, 0%, 100%, 0.1), hsla(0, 0%, 100%, 0.1)), url("../../images/levelup.gif");
+    background-position: center;
+    /* background-size: cover; */
+}
+
+.container-16 {
+    background: linear-gradient(hsla(0, 0%, 100%, 0.1), hsla(0, 0%, 100%, 0.1)), url("../../images/portfolia.gif");
+    background-position: center;
+    /* background-size: cover; */
+}
+
+.containers::before,
+.containers::after {
+    content: "";
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid #fff;
+    position: absolute;
+    z-index: 2;
+    opacity: 0.3;
+    transition: 0.3s;
+}
+
+.containers::before {
+    top: 2rem;
+    right: 2rem;
+    border-bottom-width: 0;
+    border-left-width: 0;
+}
+
+.containers::after {
+    bottom: 2rem;
+    left: 2rem;
+    border-top-width: 0;
+    border-right-width: 0;
+}
+
+.container-active {
+    transition: none;
+}
+
+.containers-2 {
+    filter: hue-rotate(80deg) saturate(140%);
+}
+
+.containers-3 {
+    filter: hue-rotate(160deg) saturate(140%);
+}
+
+.containers p {
+    color: hsla(0, 0%, 100%, 0.6);
+    font-size: 2.2rem;
+}
+
+.wrap:hover .containers::before,
+.wrap:hover .containers::after {
+    width: calc(100% - 4rem);
+    height: calc(100% - 4rem);
+}
+
+
+@media (max-width: 602px) {
+
+    .container-1,
+    .container-2,
+    .container-3,
+    .container-4,
+    .container-5,
+    .container-6,
+    .container-7,
+    .container-8,
+    .container-9,
+    .container-10,
+    .container-11,
+    .container-12,
+    .container-13,
+    .container-14,
+    .container-15,
+    .container-16 {
+        width: 100%;
+    }
+
+    .containers {
+        height: 25rem;
+        padding: 6rem;
+    }
+
+    .containers p {
+        font-size: 1rem;
+    }
+
+
+    .wrap-1,
+    .wrap-2,
+    .wrap-3,
+    .wrap-4,
+    .wrap-5,
+    .wrap-6,
+    .wrap-7,
+    .wrap-8,
+    .wrap-9,
+    .wrap-10,
+    .wrap-11,
+    .wrap-12,
+    .wrap-13,
+    .wrap-14,
+    .wrap-15,
+    .wrap-16 {
+        margin: 0;
+        width: 100%;
+    }
+
+    .main {
+        width: 100%;
+        gap: 25px;
+    }
+}

@@ -51,7 +51,11 @@
 
 }
 
-.menu__buttom {}
+.menu__buttom {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
 
 .menu__buttoms {
     font-family: 'Bai Jamjuree';
@@ -66,14 +70,25 @@
 }
 
 
-@media (max-width: 700px) {
-    .nav__item {
-        display: none;
+
+
+@media (max-width: 794px) {
+    .header__title {
+        padding-top: 68px;
     }
 
     .menu__body {
         justify-content: center;
         flex-direction: column;
         gap: 30px;
+    }
+
+
+
+}
+
+@media (max-width: 420px) {
+    .header__page {
+        height: 104vh;
     }
 }

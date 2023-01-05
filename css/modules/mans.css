@@ -24,6 +24,36 @@
     margin-top: -46px;
 }
 
+.header__imgs {}
+
 .header__imgss {
     transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+@media (max-width: 794px) {
+    .header__title {
+        padding-top: 68px;
+    }
+
+    .header__man {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 420px) {
+    .header__imgs {
+        width: 100%;
+    }
+
+    .header__imgss {
+        width: 100%;
+    }
+
+    .header__titles {
+        font-size: 30px;
+    }
+
+    .header__man {
+        margin-top: 20px;
+    }
 }

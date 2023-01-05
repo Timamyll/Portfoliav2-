@@ -8,15 +8,7 @@
 @import url(./modules/music.css);
 @import url(./modules/slider.css);
 @import url(./modules/card.css);
-
-
-
-
-
-
-
-
-
+@import url(./modules/card2.css);
 
 * {
     padding: 0;
@@ -54,4 +46,37 @@ body {
     background: #000;
     scroll-behavior: smooth;
     font-family: 'Orbitron', Courier, monospace;
+}
+
+
+.header__titles {
+    position: relative;
+    text-align: center;
+    -webkit-box-reflect: below -42px linear-gradient(transparent, #0004);
+}
+
+.header__titles span {
+    animation: animate 5s linear infinite;
+    margin: 0 5px;
+}
+
+.header__titles span:nth-child(even) {
+    animation-delay: 0.4s;
+}
+
+@keyframes animate {
+    0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92% {
+        color: rgb(105, 103, 103);
+        text-shadow: none;
+    }
+
+    18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100% {
+        color: #fff;
+        text-shadow: 0 0 10px #03bcf4,
+            0 0 20px #03bcf4,
+            0 0 40px #03bcf4,
+            0 0 80px #03bcf4,
+            0 0 160px #03bcf4,
+            0 0 400px #03bcf4;
+    }
 }

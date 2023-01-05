@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>My Portfolia</title>
   <link href="https://fonts.googleapis.com/css?family=Orbitron:regular,500,600,700,800,900" rel="stylesheet" />
   <link
     href="https://fonts.googleapis.com/css?family=Bai+Jamjuree:200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic"
@@ -26,23 +26,23 @@
   <header class="header__page">
     <div class="container">
       <div class="header__menu">
-        <div class="menu__body animate__animated animate__slideInLeft">
+        <div class="menu__body animate__animated animate__slideInLeft wow">
           <div class="menu__logo">
             <img src="./images/header/logo.svg" alt="logo" class="menu__logos">
           </div>
           <nav class="menu_nav">
             <ul class="nav__item">
-              <li class="nav__link"><a href="" class="nav__items">About</a></li>
-              <li class="nav__link"><a href="" class="nav__items">Contact</a></li>
+              <li class="nav__link"><a href="#About" class="nav__items">About</a></li>
+              <li class="nav__link"><a href="#Contact" class="nav__items">Contact</a></li>
             </ul>
           </nav>
           <div class="menu__buttom">
-            <a href="" class="menu__buttoms">Let's talk</a>
+            <a href="#Contact" class="menu__buttoms">Let's talk</a>
           </div>
         </div>
         <div class="header__boxs">
           <div class="header__title">
-            <h1 class="header__titles animate__animated animate__jackInTheBox">Welcome to the incredible</h1>
+            <h1 class="header__titles animate__animated animate__jackInTheBox"><span>Welcome to</span><span>the incredible</span> </h1>
           </div>
           <div class="header__man">
             <div class="header__imgs animate__animated animate__fadeInLeft"><img src="./images/header/masns2.gif"
@@ -61,117 +61,123 @@
     </div>
     <div class="container">
 
-      <div class="tab__title">
+      <div class="tab__title wow animate__animated animate__slideInLeft" id="About">
         <h2 class="tab__titles">About me</h2>
       </div>
-      <div class="nav  slide__tab" id="myTab" role="tablist">
-        <a class="nav-item slide" style="background-image: url(./images/tab/01.png);" role="tab"
-          aria-controls="home-tab-pane" href="#myTabContent" aria-selected="true" id="home-tab" data-bs-toggle="tab"
-          data-bs-target="#home-tab-pane">
-          <h3 class="slide__title">I love coding</h3>
-        </a>
-        <a class="nav-item slide" style="background-image: url(./images/tab/02.png);" id="profile-tab"
-          data-bs-toggle="tab" data-bs-target="#profile-tab-pane" role="tab" aria-controls="profile-tab-pane"
-          aria-selected="false">
-          <h3 class="slide__title">I love music</h3>
-        </a>
-        <a class="nav-item slide" style="background-image: url(./images/tab/03.png);" id="contact-tab"
-          data-bs-toggle="tab" data-bs-target="#contact-tab-pane" role="tab" aria-controls="contact-tab-pane"
-          aria-selected="false">
-          <h3 class="slide__title">I like to study</h3>
-          </li>
-          <a class="nav-item slide" style="background-image: url(./images/tab/04.png);" id="disabled-tab"
-            data-bs-toggle="tab" data-bs-target="#disabled-tab-pane" role="tab" aria-controls="disabled-tab-pane"
-            aria-selected="false">
-            <h3 class="slide__title">My Projects</h3>
+        <div class="nav  slide__tab wow animate__animated animate__zoomInRight" id="myTab" role="tablist">
+          <a class="nav-item slide" style="background-image: url(./images/tab/01.png);" role="tab"
+            aria-controls="home-tab-pane" href="#myTabContent" aria-selected="true" id="home-tab" data-bs-toggle="tab"
+            data-bs-target="#home-tab-pane">
+            <h3 class="slide__title">I love coding</h3>
           </a>
+          <a class="nav-item slide" style="background-image: url(./images/tab/02.png);" id="profile-tab"
+            data-bs-toggle="tab" data-bs-target="#profile-tab-pane" role="tab" aria-controls="profile-tab-pane"
+            aria-selected="false">
+            <h3 class="slide__title">I love music</h3>
+          </a>
+          <a class="nav-item slide" style="background-image: url(./images/tab/03.png);" id="contact-tab"
+            data-bs-toggle="tab" data-bs-target="#contact-tab-pane" role="tab" aria-controls="contact-tab-pane"
+            aria-selected="false">
+            <h3 class="slide__title">I like to study</h3>
+          </a>
+            <a class="nav-item slide" style="background-image: url(./images/tab/04.png);" id="disabled-tab"
+              data-bs-toggle="tab" data-bs-target="#disabled-tab-pane" role="tab" aria-controls="disabled-tab-pane"
+              aria-selected="false">
+              <h3 class="slide__title">My Projects</h3>
+            </a>
+        </div>
       </div>
-      <div class="tab-content animate__animated animate__fadeInUp" id="myTabContent">
+    <div class="tab-content wow animate__animated fadeInUp" id="myTabContent">
         <div class="tab-pane fade show" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-          <div class="coding__page">
-            <h2 class="coding__title">I love coding</h2>
-            <div class="coding__box">
-              <div class="coding__images">
-                <img src="./images/coding/01.png" alt="" class="coding__img">
+          <div class="container">
+            <div class="coding__page">
+              <h2 class="coding__title">I love coding</h2>
+              <div class="coding__box">
+                <div class="coding__images">
+                  <img src="./images/coding/01.png" alt="" class="coding__img">
+                </div>
+                <div class="coding__text">
+                  <p class="coding__texts">Hi, my name is Timofey. I am a frontend developer and also do web design. I
+                    created the layout of this site myself and
+                    made it myself</p>
+                </div>
               </div>
-              <div class="coding__text">
-                <p class="coding__texts">Hi, my name is Timofey. I am a frontend developer and also do web design. I
-                  created the layout of this site myself and
-                  made it myself</p>
-              </div>
-            </div>
-            <div class="coding__box boxs">
-              <div class="coding__text">
-                <p class="coding__texts">I have been in this field since April 2022. I really like IT. And the first
-                  reason is a separate world that has so many
-                  colors and facets that they cannot be counted. The illusionist of this world is beautiful, he has no
-                  restrictions by any
-                  criteria, he is free, and in our time this is a rarity</p>
-              </div>
-              <div class="coding__images">
-                <img src="./images/coding/02.png" alt="" class="coding__img">
-              </div>
+              <div class="coding__box boxs">
+                <div class="coding__text">
+                  <p class="coding__texts">I have been in this field since April 2022. I really like IT. And the first
+                    reason is a separate world that has so many
+                    colors and facets that they cannot be counted. The illusionist of this world is beautiful, he has no
+                    restrictions by any
+                    criteria, he is free, and in our time this is a rarity</p>
+                </div>
+                <div class="coding__images">
+                  <img src="./images/coding/02.png" alt="" class="coding__img">
+                </div>
 
-            </div>
-            <div class="coding__box">
-              <div class="coding__images">
-                <img src="./images/coding/04.png" alt="" class="coding__img">
               </div>
-              <div class="coding__text">
-                <p class="coding__texts">It may seem to you that I talk a lot, but dive into my website and you will
-                  recognize me and see how wonderful it is</p>
+              <div class="coding__box">
+                <div class="coding__images">
+                  <img src="./images/coding/04.png" alt="" class="coding__img">
+                </div>
+                <div class="coding__text">
+                  <p class="coding__texts">It may seem to you that I talk a lot, but dive into my website and you will
+                    recognize me and see how wonderful it is</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
         <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-          <div class="player">
-            <div class="wrapper">
-              <div class="details">
-                <div class="now-playing">PLAYING x OF y</div>
-                <div class="track-art"></div>
-                <div class="track-name">Track Name</div>
-                <div class="track-artist">Track Artist</div>
-              </div>
+          <div class="container">
+            <h2 class="coding__title">I love music</h2>
+            <div class="player">
+              <div class="wrapper">
+                <div class="details">
+                  <div class="now-playing">PLAYING x OF y</div>
+                  <div class="track-art"></div>
+                  <div class="track-name">Track Name</div>
+                  <div class="track-artist">Track Artist</div>
+                </div>
 
-              <div class="slider_container">
-                <div class="current-time">00:00</div>
-                <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
-                <div class="total-duration">00:00</div>
-              </div>
+                <div class="slider_container">
+                  <div class="current-time">00:00</div>
+                  <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+                  <div class="total-duration">00:00</div>
+                </div>
 
-              <div class="slider_container">
-                <i class="fa fa-volume-down"></i>
-                <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">
-                <i class="fa fa-volume-up"></i>
-              </div>
+                <div class="slider_container">
+                  <i class="fa fa-volume-down"></i>
+                  <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">
+                  <i class="fa fa-volume-up"></i>
+                </div>
 
-              <div class="buttons">
-                <div class="random-track" onclick="randomTrack()">
-                  <i class="fas fa-random fa-2x" title="random"></i>
+                <div class="buttons">
+                  <div class="random-track" onclick="randomTrack()">
+                    <i class="fas fa-random fa-2x" title="random"></i>
+                  </div>
+                  <div class="prev-track" onclick="prevTrack()">
+                    <i class="fa fa-step-backward fa-2x"></i>
+                  </div>
+                  <div class="playpause-track" onclick="playpauseTrack()">
+                    <i class="fa fa-play-circle fa-5x"></i>
+                  </div>
+                  <div class="next-track" onclick="nextTrack()">
+                    <i class="fa fa-step-forward fa-2x"></i>
+                  </div>
+                  <div class="repeat-track" onclick="repeatTrack()">
+                    <i class="fa fa-repeat fa-2x" title="repeat"></i>
+                  </div>
                 </div>
-                <div class="prev-track" onclick="prevTrack()">
-                  <i class="fa fa-step-backward fa-2x"></i>
-                </div>
-                <div class="playpause-track" onclick="playpauseTrack()">
-                  <i class="fa fa-play-circle fa-5x"></i>
-                </div>
-                <div class="next-track" onclick="nextTrack()">
-                  <i class="fa fa-step-forward fa-2x"></i>
-                </div>
-                <div class="repeat-track" onclick="repeatTrack()">
-                  <i class="fa fa-repeat fa-2x" title="repeat"></i>
-                </div>
-              </div>
 
-              <div id="wave">
-                <span class="stroke"></span>
-                <span class="stroke"></span>
-                <span class="stroke"></span>
-                <span class="stroke"></span>
-                <span class="stroke"></span>
-                <span class="stroke"></span>
-                <span class="stroke"></span>
+                <div id="wave">
+                  <span class="stroke"></span>
+                  <span class="stroke"></span>
+                  <span class="stroke"></span>
+                  <span class="stroke"></span>
+                  <span class="stroke"></span>
+                  <span class="stroke"></span>
+                  <span class="stroke"></span>
+                </div>
               </div>
             </div>
           </div>
@@ -180,9 +186,10 @@
         </div>
         <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
           <div class="container">
+            <h2 class="coding__title">I love study</h2>
             <div class="study__body">
               <div class="study__slider">
-                <div class="study__images">
+                <div class="study__imagesse">
                   <img src="./images/slider/04.png" alt="slider-imgs" class="study__img">
                   <img src="./images/slider/02.png" alt="slider-imgs" class="study__img">
                   <img src="./images/slider/03.png" alt="slider-imgs" class="study__img">
@@ -194,237 +201,305 @@
             </div>
           </div>
           <div class="container">
-            <div class="card__box">
-              <div class="card__body">
-                <div class="card">
-                  <div class="face face1">
-                    <div class="content">
-                      <i class="fab fa-html5"></i>
-                      <h3>HTML5</h3>
-                    </div>
-                  </div>
-                  <div class="face face2">
-                    <div class="content">
-                      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo
-                        voluptate et
-                        hic
-                        cum ratione a.</p>
-                      <a href="#" type="button">Read More</a>
-                    </div>
+          <div class="card__box">
+            <div class="card__body">
+              <div class="card">
+                <div class="face face1">
+                  <div class="content">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML5</h3>
                   </div>
                 </div>
-                <div class="card">
-                  <div class="face face1">
+                <div class="face face2">
+                  <div class="content">
                     <div class="content">
-                      <i class="fab fa-css3"></i>
-                      <h3>CSS3</h3>
+                      <p> It is he who creates the frame of your site or application, and the fifth version will allow me to create a more
+                        SEO-optimized structure of your product</p>
                     </div>
-                  </div>
-                  <div class="face face2">
-                    <div class="content">
-                      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo
-                        voluptate et
-                        hic
-                        cum ratione a.</p>
-                      <a href="#" type="button">Read More</a>
                     </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="face face1">
-                    <div class="content">
-                      <i class="fab fa-js-square"></i>
-                      <h3>JavaScripts</h3>
                     </div>
-                  </div>
-                  <div class="face face2">
-                    <div class="content">
-                      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo
-                        voluptate et
-                        hic
-                        cum ratione a.</p>
-                      <a href="#" type="button">Read More</a>
                     </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="face face1">
-                    <div class="content">
-                      <i class="fab fa-gulp"></i>
-                      <h3>GULP</h3>
-                    </div>
-                  </div>
-                  <div class="face face2">
-                    <div class="content">
-                      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo
-                        voluptate et
-                        hic
-                        cum ratione a.</p>
-                      <a href="#" type="button">Read More</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="face face1">
-                    <div class="content">
-                      <i class="fab fa-node"></i>
-                      <h3>NodeJS</h3>
-                    </div>
-                  </div>
-                  <div class="face face2">
-                    <div class="content">
-                      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo
-                        voluptate et
-                        hic
-                        cum ratione a.</p>
-                      <a href="#" type="button">Read More</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="face face1">
-                    <div class="content">
-                      <i class="fab fa-wordpress"></i>
-                      <h3>WordPress</h3>
-                    </div>
-                  </div>
-                  <div class="face face2">
-                    <div class="content">
-                      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo
-                        voluptate et
-                        hic
-                        cum ratione a.</p>
-                      <a href="#" type="button">Read More</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="face face1">
-                    <div class="content">
-                      <i class="fab fa-react"></i>
-                      <h3>React</h3>
-                    </div>
-                  </div>
-                  <div class="face face2">
-                    <div class="content">
-                      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo
-                        voluptate et
-                        hic
-                        cum ratione a.</p>
-                      <a href="#" type="button">Read More</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="face face1">
-                    <div class="content">
-                      <i class="fab fa-bootstrap"></i>
-                      <h3>Bootstrap</h3>
-                    </div>
-                  </div>
-                  <div class="face face2">
-                    <div class="content">
-                      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo
-                        voluptate et
-                        hic
-                        cum ratione a.</p>
-                      <a href="#" type="button">Read More</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="face face1">
-                    <div class="content">
-                      <i class="fab fa-git"></i>
-                      <h3>Git</h3>
-                    </div>
-                  </div>
-                  <div class="face face2">
-                    <div class="content">
-                      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo
-                        voluptate et
-                        hic
-                        cum ratione a.</p>
-                      <a href="#" type="button">Read More</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="face face1">
-                    <div class="content">
-                      <i class="fab fa-sass"></i>
-                      <h3>Sass</h3>
-                    </div>
-                  </div>
-                  <div class="face face2">
-                    <div class="content">
-                      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo
-                        voluptate et
-                        hic
-                        cum ratione a.</p>
-                      <a href="#" type="button">Read More</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="face face1">
-                    <div class="content">
-                      <i class="fab fa-python"></i>
-                      <h3>Python</h3>
-                    </div>
-                  </div>
-                  <div class="face face2">
-                    <div class="content">
-                      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo
-                        voluptate et
-                        hic
-                        cum ratione a.</p>
-                      <a href="#" type="button">Read More</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="face face1">
-                    <div class="content">
-                      <i class="fab fa-less"></i>
-                      <h3>Less</h3>
-                    </div>
-                  </div>
-                  <div class="face face2">
-                    <div class="content">
-                      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo
-                        voluptate et
-                        hic
-                        cum ratione a.</p>
-                      <a href="#" type="button">Read More</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="face face1">
-                    <div class="content">
-                      <i class="fab fa-php"></i>
-                      <h3>PHP</h3>
-                    </div>
-                  </div>
-                  <div class="face face2">
-                    <div class="content">
-                      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo
-                        voluptate et
-                        hic
-                        cum ratione a.</p>
-                      <a href="#" type="button">Read More</a>
-                    </div>
-                  </div>
-                </div>
+                    <div class="card first-element">
+                      <div class="face face1">
+                        <div class="content">
+                          <i class="fab fa-css3"></i>
+                          <h3>CSS3</h3>
+                        </div>
+                      </div>
+                      <div class="face face2">
+                        <div class="content">
+                          <p>A formal language for describing the appearance of a document written using a markup language.</p>
+                          </div>
+                          </div>
+                          </div>
+                          <div class="card first-element">
+                            <div class="face face1">
+                              <div class="content">
+                                <i class="fab fa-js-square"></i>
+                                <h3>JavaScripts</h3>
+                              </div>
+                            </div>
+                            <div class="face face2">
+                              <div class="content">
+                                <p> This programming language allows you to revive anything: sliders, windows, tips, tabs, getting data from the server
+                                  and
+                                  much more</p>
+                                </div>
+                            </div>
+                           </div>
+                          <div class="card card-mar first-element">
+                            <div class="face face1">
+                              <div class="content">
+                                 <i class="fab fa-gulp"></i>
+                                   <h3>GULP</h3>
+                              </div>
+                            </div>
+                             <div class="face face2">
+                                <div class="content">
+                                    <p> This is a task manager for automatically performing frequently used tasks, written in the JavaScript programming
+                                      language.</p>
+                                </div>
+                              </div>
+                            </div>
+                          <div class="card card-mar first-element">
+                            <div class="face face1">
+                              <div class="content">
+                                <i class="fab fa-node"></i>
+                                <h3>NodeJS</h3>
+                              </div>
+                            </div>
+                            <div class="face face2">
+                              <div class="content">
+                                <p>This platform allows you to create a backend for your product - “brains” that will perform actions that the user does
+                                  not see</p>
+                                </div>
+                                </div>
+                                </div>
+                          <div class="card card-mar first-element">
+                            <div class="face face1">
+                              <div class="content">
+                                <i class="fab fa-wordpress"></i>
+                                <h3>WordPress</h3>
+                              </div>
+                            </div>
+                            <div class="face face2">
+                              <div class="content">
+                                <p> Freely distributed system for managing the contents of the site with open source;written on PHP;database server -
+                                  MySQL;</p>
+                                </div>
+                                </div>
+                                </div>
+                          <div class="card card-mar first-element">
+                            <div class="face face1">
+                              <div class="content">
+                                <i class="fab fa-react"></i>
+                                <h3>React</h3>
+                              </div>
+                            </div>
+                            <div class="face face2">
+                              <div class="content">
+                                <p>This library allows you to create Web applications.We can create the most interactive product for your goals</p>
+                                </div>
+                                </div>
+                                </div>
+                          <div class="card card-mar first-element">
+                            <div class="face face1">
+                              <div class="content">
+                                <i class="fab fa-bootstrap"></i>
+                                <h3>Bootstrap</h3>
+                              </div>
+                            </div>
+                            <div class="face face2">
+                              <div class="content">
+                                <p>Free set of tools for creating sites and web applications.Includes HTML and CSS design templates for typography, web
+                                  forms, buttons, marks, navigation blocks and other components of the web interface.</p>
+                                </div>
+                                </div>
+                                </div>
+                          <div class="card card-mar first-element">
+                            <div class="face face1">
+                              <div class="content">
+                                <i class="fab fa-git"></i>
+                                <h3>Git</h3>
+                              </div>
+                            </div>
+                            <div class="face face2">
+                              <div class="content">
+                                <p>Distributed version management system.The project was created by Linus Torvalds to manage the development of the
+                                  Linux
+                                  nucleus.</p>
+                                </div>
+                                </div>
+                                </div>
+                          <div class="card card-mar first-element">
+                            <div class="face face1">
+                              <div class="content">
+                                <i class="fab fa-sass"></i>
+                                <h3>Sass</h3>
+                              </div>
+                            </div>
+                            <div class="face face2">
+                              <div class="content">
+                                <p>The module included in HAML.SASS is a cSS -based circuits, designed to increase the level of CSS code abstraction and
+                                  simplify cascading styles.</p>
+                                </div>
+                                </div>
+                                </div>
+                          <div class="card card-mar first-element">
+                            <div class="face face1">
+                              <div class="content">
+                                <i class="fab fa-python"></i>
+                                <h3>Python</h3>
+                              </div>
+                            </div>
+                            <div class="face face2">
+                              <div class="content">
+                                <p>The high -level language programming language with dynamic strict typification and automatic memory control, focused
+                                  on
+                                  increasing the productivity of the developer, readiness of code and its quality</p>
+                                </div>
+                                </div>
+                                </div>
+                          <div class="card card-mar first-element">
+                            <div class="face face1">
+                              <div class="content">
+                                <i class="fab fa-less"></i>
+                                <h3>Less</h3>
+                              </div>
+                            </div>
+                            <div class="face face2">
+                              <div class="content">
+                                <p>This is a dynamic style language developed by Alexis Sellier. It was created under the influence of the Sass style
+                                  language, and, in turn, influenced its new "SCSS" syntax</p>
+                                </div>
+                              </div>
+                             </div>
+                          <div class="card card-mar first-element">
+                            <div class="face face1">
+                              <div class="content">   
+                                 <i class="fab fa-php"></i>
+                                <h3>PHP</h3>
+                              </div>
+                            </div>
+                            <div class="face face2">
+                              <div class="content">
+                                <p>C is a general-purpose scripting language that is intensively used for developing web applications. Currently, it is
+                                  supported by the vast majority of hosting providers and is one of the leaders among the languages used to create
+                                  dynamic
+                                  websites.</p>
+                                </div>
+                                </div>
+                                </div>
+                                </div>
         
-              </div>
             </div>
+            
           </div>
 
         </div>
         <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">
-          ...
+          <div class="container">
+            <h2 class="coding__title">My Projects</h2>
+            <section class="main">
+                <div class="wrap wrap-1">
+                 <a href="https://timamyll.github.io/LaslesVPN/"><div class="containers container-1">
+                    <p>01. LazerVPN</p>
+                  </div>
+                  </a>
+                </div>
+                <div class="wrap wrap-2">
+                 <a href="https://timamyll.github.io/Paralax-/"><div class="containers container-2">
+                    <p>02. Paralax-</p>
+                  </div>
+                  </a>
+                </div>
+                <div class="wrap wrap-3">
+               <a href="https://timamyll.github.io/Housevop/"><div class="containers container-3">
+                    <p>03. Housevop</p>
+                  </div>
+                  </a>
+                </div>
+                <div class="wrap wrap-4">
+                  <a href="https://timamyll.github.io/Aperture/"><div class="containers container-4">
+                    <p>04. Aperture</p>
+                  </div>
+                  </a>
+                </div>
+                <div class="wrap wrap-5">
+                 <a href="https://timamyll.github.io/Anow/"><div class="containers container-5">
+                    <p>05. Anow</p>
+                  </div>
+                  </a>
+                </div>
+                <div class="wrap wrap-6">
+                 <a href="https://timamyll.github.io/Richachd/"><div class="containers container-6">
+                    <p>06. Richachd</p>
+                  </div>
+                  </a>
+                </div>
+                <div class="wrap wrap-7">
+                 <a href="https://timamyll.github.io/himo-xiaomi/"><div class="containers container-7">
+                    <p>07. Himo-xiaomi</p>
+                  </div>
+                  </a>
+                </div>
+                <div class="wrap wrap-8">
+                 <a href="https://timamyll.github.io/Outdoor/"><div class="containers container-8">
+                    <p>08. Outdoor</p>
+                  </div>
+                  </a>
+                </div>
+                
+                <div class="wrap wrap-9">
+                 <a href="https://timamyll.github.io/Safari/"><div class="containers container-9">
+                    <p>09. Safari</p>
+                  </div>
+                  </a>
+                </div>
+                  <div class="wrap wrap-10">
+                 <a href="https://timamyll.github.io/Cafe-start/"><div class="containers container-10">
+                    <p>10. Cafe-start</p>
+                  </div>
+                  </a>
+                </div>
+                 <div class="wrap wrap-11">
+                 <a href="https://timamyll.github.io/spaceX/"><div class="containers container-11">
+                    <p>11. SpaceX</p>
+                  </div>
+                  </a>
+                </div>
+                <div class="wrap wrap-12">
+                 <a href="https://timamyll.github.io/JS-Game/"><div class="containers container-12">
+                    <p>12. JS-Game</p>
+                  </div>
+                  </a>
+                </div>
+                <div class="wrap wrap-13">
+                 <a href="https://timamyll.github.io/Relvise/"><div class="containers container-13">
+                    <p>13. Relvise</p>
+                  </div>
+                  </a>
+                </div>
+                <div class="wrap wrap-14">
+                 <a href="https://timamyll.github.io/Car-cart/"><div class="containers container-14">
+                    <p>14. Car-cart</p>
+                  </div>
+                  </a>
+                </div>
+                <div class="wrap wrap-15">
+                 <a href="https://timamyll.github.io/LevelUp/"><div class="containers container-15">
+                    <p>15. LevelUp</p>
+                  </div>
+                  </a>
+                </div>
+                <div class="wrap wrap-16">
+                 <a href="https://timamyll.github.io/PortfolioTImiDeveloper/"><div class="containers container-16">
+                    <p>16. Portfolia v1</p>
+                  </div>
+                  </a>
+                </div>
+              </section>
+          </div>
         </div>
       </div>
     </div>
@@ -433,23 +508,23 @@
 
   </section>
 
-  <section class="page__contact">
+  <section class="page__contact" id="Contact">
     <div class="container">
       <div class="contact__title">
         <h2 class="contact__titles">Contact with me</h2>
       </div>
       <div class="contact__box">
         <div class="contact__body">
-          <a href="" class="contact__telegramm">telegram</a>
+          <a href="https://t.me/Timi2612" class="contact__telegramm">telegram</a>
           <a href="" class="contact__instagramm">instagramm
           </a>
-          <a href="" class="contact__github">Github
+          <a href="https://github.com/Timamyll" class="contact__github">Github
           </a>
         </div>
         <div class="contact__bodys">
 
-          <a href="" class="contact__linkedin">linkedin</a>
-          <a href="" class="contact__codewars">codewars
+          <a href="https://www.linkedin.com/in/тима-мыльцев-3641aa258/" class="contact__linkedin">linkedin</a>
+          <a href="https://www.codewars.com/users/Timamyll" class="contact__codewars">codewars
           </a>
           <a href="mailto:mylcevtima434@gmail.com" class="contact__gmail">gmail
           </a>
@@ -458,7 +533,7 @@
     </div>
   </section>
 
-  <footer class="footer_page">
+    <footer class="footer_page">
     <div class="container">
       <div class="header__menu footer">
         <div class="menu__body animate__animated animate__slideInLeft">
@@ -467,11 +542,12 @@
           </div>
           <nav class="menu_nav">
             <ul class="nav__item">
-              <li class="nav__link"><a href="" class="nav__items">About</a></li>
-              <li class="nav__link"><a href="" class="nav__items">Contact</a></li>
+              <li class="nav__link"><a href="#About" class="nav__items">About</a></li>
+              <li class="nav__link"><a href="#Contact" class="nav__items">Contact</a></li>
             </ul>
           </nav>
           <div class="menu__buttom">
+          <img src="./images/milk.svg" alt="">
             <a href="" class="menu__buttoms">Let's talk</a>
           </div>
         </div>
@@ -483,7 +559,7 @@
 
 
 
-
+<!-- 
   <div class="phone">
     <div class="menu">
       <div class="options">
@@ -498,10 +574,11 @@
       </g>
     </svg>
     <div class="menu-click-area" onclick="document.querySelector('.phone').classList.toggle('active')"></div>
-  </div>
+  </div>  -->
 
 
 
+  <script src="./js/card.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/jquery.fancybox.min.js"></script>
@@ -510,25 +587,10 @@
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
     crossorigin="anonymous"></script>
   <script src="./js/scripts.js"></script>
-<link rel="stylesheet" href="https://wowjs.uk/css/libs/animate.css" />
-<script src="https://www.delac.io/WOW/dist/wow.min.js"></script>
-<script>
-  new WOW().init();
-</script>
-<script>
-  Array.from(document.querySelectorAll('.block-link')).map((animation) => {
-    animation.classList.add('wow');
-    animation.classList.add('fadeInLeft');
-  });
-</script>
-<script>
-  Array.from(document.querySelectorAll('.block-rext')).map((animation) => {
-    animation.classList.add('wow');
-    animation.classList.add('fadeInLeft');
-  });
-</script>
+  <script src="./js/wow.min.js"></script>
+  <script>new WOW().init();</script>
+  <script src="./js/main.js"></script>
 
-  <script src="js/main.js"></script>
 </body>
 
 </html>

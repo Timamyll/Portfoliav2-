@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  $(".study__images").slick({
+  $(".study__imagesse").slick({
     prevArrow: false,
     nextArrow: false,
     dots: true,
@@ -7,3 +7,4 @@ $(document).ready(function () {
     autoplaySpeed: 1000,
   });
 });
+

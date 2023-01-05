@@ -157,3 +157,64 @@
     padding-bottom: 118px;
     padding-top: 116px;
 }
+
+
+@media (max-width: 1230px) {
+    .contact__box {
+        flex-direction: column;
+    }
+
+    .contact__body {
+        width: 100%;
+    }
+
+    .contact__bodys {
+        width: 100%;
+    }
+}
+
+@media (max-width: 805px) {
+
+    .contact__telegramm,
+    .contact__codewars,
+    .contact__github,
+    .contact__gmail,
+    .contact__instagramm,
+    .contact__linkedin {
+        font-size: 28px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact__titles {
+        font-size: 42px;
+        padding-top: 59px;
+        padding-bottom: 59px;
+    }
+}
+
+@media (max-width: 581px) {
+    .page__contact {
+        padding-bottom: 0;
+    }
+}
+
+
+@media (max-width: 465px) {
+    .contact__titles {
+        font-size: 27px;
+    }
+
+    .contact__telegramm,
+    .contact__codewars,
+    .contact__github,
+    .contact__gmail,
+    .contact__instagramm,
+    .contact__linkedin {
+        font-size: 20px;
+        padding: 0;
+        height: 42px;
+
+    }
+}

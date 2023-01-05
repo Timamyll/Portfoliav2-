@@ -39,3 +39,45 @@
 .boxs {
     order: 1;
 }
+
+
+
+@media (max-width: 1291px) {
+    .coding__img {
+        width: 100%;
+    }
+
+    .coding__box {
+        gap: 60px;
+    }
+}
+
+@media (max-width: 1090px) {
+    .coding__box {
+        flex-direction: column;
+    }
+
+    .coding__texts {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .coding__img {
+        margin-bottom: 30px;
+    }
+
+    .coding__images {
+        order: 1;
+    }
+}
+
+@media (max-width: 785px) {
+    .coding__texts {
+        font-size: 25px;
+    }
+
+    .coding__title {
+        font-size: 25px;
+        padding: 43px;
+    }
+}

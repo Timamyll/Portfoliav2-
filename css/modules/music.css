@@ -152,15 +152,19 @@ p {
 
 .rotate {
     animation: rotation 8s infinite linear;
+    transition: all 0.3s ease-in-out;
 }
 
 @keyframes rotation {
     from {
         transform: rotate(0deg);
+        transition: all 0.3s ease-in-out;
     }
 
     to {
         transform: rotate(359deg);
+        transition: all 0.3s ease-in-out;
+
     }
 }
 
@@ -169,6 +173,8 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.3s ease-in-out;
+
 }
 
 .loader .stroke {
@@ -218,4 +224,46 @@ p {
 
 .stroke:nth-child(7) {
     animation-delay: 0s;
+}
+
+
+@media (max-width: 560px) {
+    .wrapper {
+        margin-top: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .track-name {
+        font-size: 1rem;
+    }
+
+    .track-artist {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 420px) {
+    .buttons {
+        justify-content: center;
+    }
+
+    .fa-2x {
+        font-size: 2rem;
+    }
+
+    .fa-5x {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 360px) {
+
+    .seek_slider {
+        width: 40%;
+    }
+
+    .repeat-track, .random-track, .playpause-track, .prev-track, .next-track {
+        padding: 15px;
+    }
 }

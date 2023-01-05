@@ -87,3 +87,35 @@
     /* border: 1px solid #fff;
     border-radius: 20px; */
 }
+
+
+@media (max-width: 960px) {
+    .slide .slide__title {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 516px) {
+    .slide__tab {
+        gap: 9px;
+    }
+
+    .slide {
+        height: 44vh;
+    }
+
+    .slide .slide__title {
+        bottom: 59px;
+        font-size: 14px;
+        line-height: 100%;
+    }
+
+    .tab__titles {
+        font-size: 33px;
+    }
+
+    .tab__title {
+        padding-bottom: 25px;
+        padding-top: 20px;
+    }
+}
